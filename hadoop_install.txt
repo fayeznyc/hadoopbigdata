@@ -1,0 +1,36 @@
+    1  sudo apt update
+    2  sudo apt upgrade -y
+    3  sudo apt purge openjdk*
+    4  sudo add-apt-repository -y ppa:webupd8team/java
+    5  sudo apt update
+    6  sudo apt install -y oracle-java8-installer
+    7  java -version
+    8  sudo nano/etc/profile
+    9  sudo nano /etc/profile
+   10  source /etc/profile
+   11  sudo nano /etc/sysctl.conf
+   12  reboot
+   13  sudo reboot
+   14  sudo addgroup hadoopgroup
+   15  sudo adduser -ingroup hadoopgroup hadoopuser
+   16  sudo apt install ssh
+   17  sudo systemctl enable ssh
+   18  sudo systemctl start ssh
+   19  su - hadoopuser
+   20  sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z"
+   21  su - hadoopuser
+   22  sudo nano /usr/local/hadoop/etc/hadoop/hadoop-env.sh
+   23  cd /usr/local/hadoop/etc/hadoop
+   24  sudo nano core-site.xml
+   25  sudo nano hdfs-site.xml
+   26  sudo nano mapred-site.xml.template
+   27  su - hadoopuser
+   28  wget http://mirrors.advancedhosters.com/apache/hadoop/common/hadoop-2.8.4/hadoop-2.8.4.tar.gz
+   29  sudo tar xzf hadoop-2.8.4.tar.gz
+   30  sudo mv hadoop-2.8.4 /usr/local
+   31  sudo ln -sf /usr/local/hadoop-2.8.4/ /usr/local/hadoop
+   32  sudo chown -R hadoopuser:hadoopgroup /usr/local/hadoop-2.8.4/
+   33  su - hadoopuse
+   34  su - hadoopuser
+   35  history
+   36  history > hadoop_install.txt
