@@ -1,0 +1,136 @@
+    1  sudo apt update
+    2  sudo apt upgrade -y
+    3  sudo apt purge openjdk*
+    4  sudo add-apt-repository -y ppa:webupd8team/java
+    5  sudo apt update
+    6  sudo apt install -y oracle-java8-installer
+    7  java -version
+    8  sudo nano /etc/profile
+    9  source /etc/profile
+   10  sudo nano /etc/sysctl.conf
+   11  sudo reboot
+   12  sudo addgroup hadoopgroup
+   13  sudo adduser -ingroup hadoopgroup hadoopuser
+   14  sudo apt install ssh
+   15  sudo adduser -ingroup hadoopgroup hadoopuser
+   16  sudo systemctl start ssh
+   17  su - hadoopuser
+   18  sudo nano /usr/local/hadoop/etc/hadoop/hadoop-env.sh
+   19  cd /usr/local/hadoop/etc/hadoop
+   20  sudo nano core-site.xml
+   21  sudo nano hdfs-site.xml
+   22  sudo nano mapred-site.xml.template
+   23  sudo nano yarn-site.xml
+   24  su - hadoopuser
+   25  wget http://apache.mirrors.pair.com/hadoop/common/hadoop-2.8.4/hadoop-2.8.4.tar.gz
+   26  sudo tar xzf hadoop-2.8.4.tar.gz
+   27  sudo mv hadoop-2.8.4 /usr/local
+   28  sudo ln -sf /usr/local/hadoop-2.8.4/ /usr/local/hadoop
+   29  sudo chown -R hadoopuser:hadoopgroup /usr/local/hadoop-2.8.4/
+   30  su - hadoopuser
+   31  sudo apt-get update
+   32  cd
+   33  sudo apt-get install mysql-server
+   34  sudo mysql_secure_installation
+   35  sudo mysql
+   36  $sudo apt update && sudo apt upgrade
+   37  mysql
+   38  sudo mysql
+   39  sudo mysql-workbench
+   40  sudo apt install mysql-workbench
+   41  sudo apt update && sudo apt upgrade
+   42  sudo apt install mysql-workbench
+   43  sudo mysql-workbench
+   44  cd Downloads
+   45  ls
+   46  wget https://archive.apache.org/dist/pig/pig-0.15.0/pig-0.15.0.tar.gz
+   47  sudo tar zxvf pig-0.15.0.tar.gz
+   48  cd /usr/local/hadoop
+   49  sudo mkdir Pig
+   50  ls
+   51  cd
+   52  cd Downloads
+   53  sudo mv pig-0.15.0/* /usr/local/hadoop/Pig/
+   54  cd /usr/local/hadoop/Pig/
+   55  ls
+   56  su - hadoopuser
+   57  wget http://mirror.olnevhost.net/pub/apache/spark/spark-2.3.1/spark-2.3.1-bin-hadoop2.7.tgz
+   58  su - hadoopuser
+   59  wget https://downloads.lightbend.com/scala/2.12.6/scala-2.12.6.tgz
+   60  sudo mv scala-2.12.6 /usr/local/scala
+   61  su - hadoopuser
+   62  cd  /usr/lib/hive/apache-hive-0.13.0-bin/bin
+   63  sudo gedit hive-config.sh
+   64  su - hadoopuser
+   65  cd
+   66  cd/usr/lib
+   67  cd /usr/lib
+   68  sudo mkdir hive
+   69  cd
+   70  wget http://archive.apache.org/dist/hive/hive-0.13.0/apache-hive-0.13.0-bin.tar.gz
+   71  sudo tar xvzf apache-hive-0.13.0-bin.tar.gz
+   72  sudo mv apache-hive-0.13.0-bin /usr/lib/hive
+   73  su - hadoopuser
+   74  cd
+   75  bash Anaconda3-5.0.1-Linux-x86_64.sh
+   76  cd downloads
+   77  cd
+   78  cd downloads
+   79  sudo snap install pycharm-community --classic
+   80  cd
+   81  cd downloads
+   82  sudo mysql
+   83  sudo apt update && sudo apt upgrade
+   84  sudo apt install mysql-workbench
+   85  sudo mysql-workbench
+   86  cd
+   87  cd downloads
+   88  Sudo apt install python    
+   89  wget www.scala-lang.org/files/archive/scala-2.11.0.deb
+   90  sudo dpkg -i scala-2.11.0.deb
+   91  scala -version
+   92  sudo nano hw.scala
+   93  sudo scala hw.scala
+   94  sudo scala
+   95  sudo nano hw2.scala
+   96  sudo scala hw2.scala
+   97  sudo scala hw3.scala
+   98  sudo nano hw3.scala
+   99  sudo scala hw3.scala
+  100  sudo nano hw3.scala
+  101  sudo scala hw3.scala
+  102  sudo nano hw3.scala
+  103  sudo scala  hw3.scala
+  104  sudo nano hw3.scala
+  105  sudo scala  hw3.scala
+  106  sudo nano hw4.scala
+  107  sudo scala  hw4.scala
+  108  sudo scala  hw5.scala
+  109  sudo scala hw5.scala
+  110  sudo nano hw5.scala
+  111  sudo scala hw5.scala
+  112  cd
+  113  source .bashrc
+  114  su - hadoopuser
+  115  sudo apt install jupyter-core
+  116  cd
+  117  wget https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+  118  bash Anaconda3-5.2.0-Linux-x86_64.sh
+  119  cd
+  120  source .bashrc
+  121  jupyter notebook
+  122  mysql
+  123  sudo mysql
+  124  su - hadoopuser
+  125  Sudo apt install python
+  126  sudo apt install python
+  127  su - hadoopuser
+  128  ls
+  129  bash Anaconda3-5.0.1-Linux-x86_64.sh
+  130  ls
+  131  Anaconda3-5.2.0-Linux-x86_64.sh
+  132  bash Anaconda3-5.2.0-Linux-x86_64.sh
+  133  cd
+  134  sudo snap install pycharm-community --classic
+  135  su - hadoopuser
+  136  history >hadoopusercommands.txt
